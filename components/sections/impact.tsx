@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
+import { Container } from "../container"
 
 const stats = [
   {
@@ -26,7 +27,7 @@ const stats = [
 export function ImpactSection() {
   return (
     <section className="bg-secondary py-20 md:py-28">
-      <div className="container mx-auto px-4 md:px-6">
+      <Container>
         <div className="mb-12 text-center">
           <h2 className="text-balance text-3xl font-bold tracking-tight text-secondary-foreground md:text-4xl">
             Our Impact in Numbers
@@ -38,8 +39,8 @@ export function ImpactSection() {
         
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat) => (
-            <Card key={stat.label} className="border-0 bg-background text-center shadow-md">
-              <CardContent className="flex flex-col gap-2 pt-6">
+            <Card key={stat.label} className="border-0 bg-background text-center">
+              <CardContent className="flex flex-col gap-2 py-6">
                 <span className="text-4xl font-bold text-primary md:text-5xl">
                   {stat.value}
                 </span>
@@ -53,7 +54,7 @@ export function ImpactSection() {
             </Card>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   )
 }
