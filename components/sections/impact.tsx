@@ -1,25 +1,29 @@
-import { Card, CardContent } from "@/components/ui/card"
+import { ImpactCard } from "@/components/ui/impact-card"
 
 const stats = [
   {
     value: "10,000+",
-    label: "Meals Served",
-    description: "Hot meals delivered to families in need"
+    label: "Meals Provided",
+    description: "Hot meals delivered to families in need",
+    imageAlt: "Volunteer handing out food to community members"
   },
   {
     value: "5,000+",
     label: "Lives Changed",
-    description: "Individuals supported through our programs"
+    description: "Individuals supported through our programs",
+    imageAlt: "People smiling after receiving support"
   },
   {
     value: "150+",
-    label: "Communities",
-    description: "Local communities reached worldwide"
+    label: "Communities Reached",
+    description: "Local communities impacted worldwide",
+    imageAlt: "Map showing community locations"
   },
   {
     value: "$2M+",
     label: "Funds Raised",
-    description: "Donations channeled to impactful causes"
+    description: "Donations channeled to impactful causes",
+    imageAlt: "Donors contributing to the cause"
   }
 ]
 
@@ -36,21 +40,15 @@ export function ImpactSection() {
           </p>
         </div>
         
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 sm:grid-cols-2">
           {stats.map((stat) => (
-            <Card key={stat.label} className="border-0 bg-background text-center shadow-md">
-              <CardContent className="flex flex-col gap-2 pt-6">
-                <span className="text-4xl font-bold text-primary md:text-5xl">
-                  {stat.value}
-                </span>
-                <span className="text-lg font-semibold text-foreground">
-                  {stat.label}
-                </span>
-                <span className="text-sm text-muted-foreground">
-                  {stat.description}
-                </span>
-              </CardContent>
-            </Card>
+            <ImpactCard
+              key={stat.label}
+              value={stat.value}
+              label={stat.label}
+              description={stat.description}
+              imageAlt={stat.imageAlt}
+            />
           ))}
         </div>
       </div>
