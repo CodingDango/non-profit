@@ -23,7 +23,7 @@ export function DonationPreview({ children }: { children: React.ReactNode }) {
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
-      <DialogContent className="rounded-xl sm:max-w-100 p-0 overflow-hidden border-0">
+      <DialogContent aria-describedby={'donation-form'} className="rounded-xl sm:max-w-100 p-0 overflow-hidden border-0">
         {/* Top Branding Strip */}
         <div className="bg-primary p-6 text-primary-foreground flex flex-col items-center gap-2">
           <div className="size-12 rounded-full bg-white/20 flex items-center justify-center">
