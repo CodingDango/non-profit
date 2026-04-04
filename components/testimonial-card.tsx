@@ -10,7 +10,7 @@ interface TestimonialCardProps {
 
 export function TestimonialCard({ quote, name, role, location, profile}: TestimonialCardProps) {
   return (
-    <div className="flex flex-col gap-6 rounded-xl border shadow-sm bg-card p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+    <div className="flex flex-col gap-6 rounded-xl border shadow-sm bg-card p-6">
       <div className="flex items-start gap-4">
         <span className="text-4xl font-serif leading-none text-primary">&ldquo;</span>
         <blockquote>
