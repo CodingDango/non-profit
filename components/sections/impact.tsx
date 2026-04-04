@@ -10,7 +10,7 @@ const stats = [
   {
     value: "5,000+",
     label: "Lives Changed",
-    description: "Individuals supported through our programs"
+    description: "Individuals supported in our programs"
   },
   {
     value: "150+",
@@ -39,7 +39,7 @@ export function ImpactSection() {
         
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat) => (
-            <Card key={stat.label} className="border-0 bg-background text-center">
+            <Card key={stat.label} className="shadow-lg border-transparent text-center">
               <CardContent className="flex flex-col gap-2 py-6">
                 <span className="text-4xl font-bold text-primary md:text-5xl">
                   {stat.value}

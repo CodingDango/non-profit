@@ -17,7 +17,7 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-[radial-gradient(circle,_transparent_0%,_rgba(0,0,0,0.4)_70%,_rgba(0,0,0,0.9)_100%)]" />
 
       <Container className="relative flex items-center h-full min-h-144 lg:min-h-192">
-        <div className="text-center sm:text-start flex flex-col gap-8 max-w-2xl">
+        <div className="text-center sm:text-start flex flex-col gap-8 max-w-3xl">
           <div className="space-y-4">
             <h1 className="text-balance text-4xl font-bold tracking-tight text-primary-foreground md:text-5xl lg:text-6xl">
               Together, We Can Change Lives

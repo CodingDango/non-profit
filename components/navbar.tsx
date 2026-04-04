@@ -26,7 +26,7 @@ export function Navbar() {
           </span>
         </Link>
 
-        <div className="flex gap-6">
+        <div className="flex gap-4 sm:gap-6">
           {!isSmallScreen ? (
             <nav className="text-sm items-center gap-6 flex">
               <Link
@@ -53,7 +53,7 @@ export function Navbar() {
               <PopoverTrigger asChild>
                 <Button variant="secondary"><Menu/></Button>
               </PopoverTrigger>
-              <PopoverContent className="w-fit" align='center'>
+              <PopoverContent className="w-fit" align='start'>
                 <PopoverHeader>
                   <nav className="text-sm gap-4 flex-col flex">
                     <Link
