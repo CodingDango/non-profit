@@ -26,7 +26,7 @@ const stats = [
 
 export function ImpactSection() {
   return (
-    <section className="bg-secondary py-20 md:py-28">
+    <section className="bg-secondary">
       <Container>
         <div className="mb-12 text-center">
           <h2 className="text-balance text-3xl font-bold tracking-tight text-secondary-foreground md:text-4xl">
@@ -39,9 +39,9 @@ export function ImpactSection() {
         
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat) => (
-            <Card key={stat.label} className="shadow-lg border-transparent text-center">
-              <CardContent className="flex flex-col gap-2 py-6">
-                <span className="text-4xl font-bold text-primary md:text-5xl">
+            <Card key={stat.label} className="shadow-md text-center">
+              <CardContent className="flex flex-col gap-2 p-4 sm:p-6">
+                <span className="text-3xl font-bold text-primary md:text-4xl">
                   {stat.value}
                 </span>
                 <span className="text-lg font-semibold text-foreground">

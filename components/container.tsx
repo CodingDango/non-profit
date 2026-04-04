@@ -13,7 +13,7 @@ export function Container({
   py = "py-20 md:py-32"
 }: ContainerProps) {
   return (
-    <div className={cn("container mx-auto px-4 md:px-6", py, className)}>
+    <div className={cn("max-w-7xl mx-auto px-4 md:px-6", py, className)}>
       {children}
     </div>
   )
