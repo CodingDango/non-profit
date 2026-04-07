@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import ContactInfo from "./contact-info";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -39,7 +40,7 @@ export default function ContactForm() {
   return (
     <section className="bg-background">
       <Container>
-        <div className="grid md:grid-cols-[3fr_2fr] gap-12">
+        <div className="grid md:grid-cols-[3fr_2fr] gap-16">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid sm:grid-cols-2 gap-8">
               <div className="space-y-2">
@@ -100,6 +101,7 @@ export default function ContactForm() {
           </form>
 
           {/* Contact Info & Socials */}
+          <ContactInfo/>
         </div>
       </Container>
     </section>
