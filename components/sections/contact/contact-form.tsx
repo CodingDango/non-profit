@@ -48,7 +48,7 @@ export default function ContactForm() {
                 <Input
                   id="firstName"
                   name="firstName"
-                  placeholder="John Doe"
+                  placeholder="John"
                   value={formData.firstName}
                   onChange={handleChange}
                   required
@@ -59,7 +59,7 @@ export default function ContactForm() {
                 <Input
                   id="lastName"
                   name="lastName"
-                  placeholder="John Doe"
+                  placeholder="Doe"
                   value={formData.lastName}
                   onChange={handleChange}
                   required
@@ -73,7 +73,7 @@ export default function ContactForm() {
                 id="email"
                 name="email"
                 type="email"
-                placeholder="john@example.com"
+                placeholder="johndoe@example.com"
                 value={formData.email}
                 onChange={handleChange}
                 required
