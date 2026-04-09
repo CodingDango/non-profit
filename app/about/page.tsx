@@ -1,4 +1,3 @@
-import { Container } from "@/components/container";
 import { AboutHero } from "@/components/sections/about/about-hero";
 import { WhyAndWho } from "@/components/sections/about/why-and-who";
 import { HowWeWork } from "@/components/sections/about/how-we-work";
